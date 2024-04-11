@@ -19,12 +19,12 @@ export default function Sidebar(){
             }
 
             <div className="absolute bottom-0 w-full">
-                <a href={`/settings`} className="flex flex-col px-2 items-center justify-center mb-4 text-white hover:text-[#48dbfb] transition-transform duration-300">
+                <a href={`/settings`} className="flex flex-col px-2 items-center justify-center mb-4 text-white hover:text-cyan-500 transition-transform duration-300">
                     <h1 className="text-3xl">&#9881;</h1>
                     <h2 className="font-bold">Settings</h2>
                 </a>                    
 
-                <a href={`/logout`} className="flex flex-col px-2 items-center justify-center mb-4 text-white hover:text-[#48dbfb] transition-transform duration-300">
+                <a href={`/logout`} className="flex flex-col px-2 items-center justify-center mb-4 text-white hover:text-cyan-500 transition-transform duration-300">
                     <h1 className="text-3xl">&#11176;</h1>
                     <h2 className="font-bold">Logout</h2>
                 </a>                    

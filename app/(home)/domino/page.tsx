@@ -9,7 +9,7 @@ export default function Page(){
             <RulesBoard title="Chess rules" rules={chessRules} />
             
             <PlayGameBoard 
-                gameName="Chess"
+                gameName="Domino"
                 links={{ practice: "/", playForReal: "/" }}
             />
             
