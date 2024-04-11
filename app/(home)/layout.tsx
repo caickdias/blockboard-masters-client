@@ -1,5 +1,6 @@
 import Navbar from "@/components/_layout/Navbar";
 import Sidebar from "@/components/_layout/Sidebar";
+import Chatbox from "@/components/chatbox";
 
 export default function RootLayout({
   children,
@@ -13,7 +14,10 @@ export default function RootLayout({
 
       <div className="flex flex-1 flex-col">
         <Navbar />
-        {children}
+        <div className="flex flex-1 flex-row">
+          {children}
+          <Chatbox />
+        </div>
       </div>
 
     </div>
