@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cryptoboard Master",
+  title: "Cryptoboard Masters",
   description: "Cryptoboard Masters",
 };
 
