@@ -42,7 +42,7 @@ export default function PlayGameBoard({ gameName, links } : Props){
 const Card = ({ link, title, description }: CardProps) => {
 
     return(
-        <a href={`/${link}`} className="flex flex-col gap-6 h-full min-w-24 max-w-80 rounded-lg p-8 shadow-md shadow-zinc-400 hover:shadow-main-purple transition-all duration-300">
+        <a href={`/${link}`} className="bg-white flex flex-col gap-6 h-full min-w-24 max-w-80 rounded-lg p-8 shadow-md shadow-zinc-400 hover:shadow-main-purple transition-all duration-300">
                         
             <h1 className="text-center text-main-purple font-bold text-xl">
                 {title}
