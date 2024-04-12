@@ -1,6 +1,7 @@
 import Navbar from "@/components/_layout/Navbar";
 import Sidebar from "@/components/_layout/Sidebar";
-import Chatbox from "@/components/chatbox";
+import Chatbox from "@/features/chatbox";
+
 
 export default function RootLayout({
   children,
