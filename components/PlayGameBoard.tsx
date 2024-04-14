@@ -29,7 +29,7 @@ export default function PlayGameBoard({ gameName, links } : Props){
                     <Card 
                         title="Play for real"
                         description="Play online against other players. You should bet coins every game. "
-                        link={links.practice}
+                        link="rooms"
                     />
                     
 

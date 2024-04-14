@@ -1,7 +1,7 @@
 export default function Navbar(){
 
     return(
-        <nav className="bg-white flex flex-1 h-24 max-h-24 w-full items-center justify-between px-12 border-b-[1px] border-main-purple">
+        <nav className="bg-white flex flex-1 h-24 max-h-24 w-full items-center justify-between px-8 border-b-[1px] border-main-purple">
             
             <h1 className="text-5xl text-main-purple font-bold">Crypto<span className="text-cyan-500">board</span> Masters &#9822;</h1>
             
