@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import Square from './components/square';
 import * as PIECES from './lib/pieces';
@@ -21,11 +21,11 @@ export default function Gameboard(){
     ]
 
     return(
-        <div className='flex flex-col border-[1px] border-main-purple rounded-lg p-4'>
-            <div className='flex flex-col border-[1px] border-main-purple rounded-lg bg-white'>
+        <BoardOutline>
+            <BoardInline>
             {   
-                boardPieces.reverse().map((row, x) => (
-                    <div className='flex flex-row'>
+                boardPieces.map((row, x) => (
+                    <Row>
                     {
                         row.map((item, y) => (
                             <Square 
@@ -35,10 +35,36 @@ export default function Gameboard(){
                             />
                         ))
                     }
-                    </div>
+                    </Row>
                 ))
             }
-            </div>
+            </BoardInline>
+        </BoardOutline>
+    )
+}
+
+const BoardOutline = ({ children }: { children: ReactNode}) => {
+
+    return(
+        <div className='flex flex-col border-[1px] border-main-purple rounded-lg p-4 bg-white'>
+            {children}
+        </div>
+    )
+}
+
+const BoardInline = ({ children }: { children: ReactNode}) => {
+
+    return(
+        <div className='flex flex-col border-[1px] border-main-purple rounded-lg bg-white overflow-hidden'>
+            {children}
+        </div>
+    )
+}
+
+const Row = ({ children }: { children: ReactNode}) => {
+    return(
+        <div className='flex flex-row'>
+            {children}
         </div>
     )
 }

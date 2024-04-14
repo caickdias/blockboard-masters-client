@@ -32,8 +32,7 @@ export default function Chatbox(){
           onConnect();
         }
     
-        function onConnect() {            
-            console.log(socket.id)
+        function onConnect() {                        
             socket.emit("username", 'anonymous');                        
         }
     

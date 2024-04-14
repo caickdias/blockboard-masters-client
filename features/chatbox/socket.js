@@ -2,6 +2,6 @@
 
 import { io } from "socket.io-client";
 
-export const socket = io("http://localhost:8002", {
+export const socket = io("https://tidy-signs-divide.loca.lt", {
   transports: ["websocket", "polling"]
 });

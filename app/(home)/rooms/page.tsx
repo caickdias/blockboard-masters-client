@@ -1,14 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
 
+import CreateRoom from '@/features/create-room';
+
 export default function Page(){
 
-    
     return(
         <main className='flex flex-1 flex-col py-4 px-8 gap-8'>
 
-            <h1 className='text-4xl font-bold text-main-purple'>Rooms</h1>
-
+            <div className='w-full flex flex-row items-center justify-between'>
+                <h1 className='text-4xl font-bold text-main-purple'>Rooms</h1>
+                
+                <CreateRoom />
+            </div>
             <div>
                 <RoomCard />
             </div>

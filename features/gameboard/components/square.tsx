@@ -9,7 +9,6 @@ type Props = {
 export default function Square({ x, y, item}: Props){
 
     const isDarkSquare = (x + y) % 2 == 1;
-    const isWhitePiece = x < 3;
 
     return(
         <div className={`flex w-20 h-20 items-center justify-center ${isDarkSquare && 'bg-main-purple'}`}>
